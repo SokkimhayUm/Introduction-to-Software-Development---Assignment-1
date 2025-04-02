@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-weight: 200;
+  color: #878787;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #878787;
+}
+
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items li {
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #878787;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-items li img {
+  width: 20px;
+  height: auto;
+}
+
+.nav-items li:hover {
+  color: #000;
+  font-weight: 400;
+}
+
+.content {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #000;
+}
+
+.main-content {
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  color: #373737;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 10px;
+  width: 250px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #272727;
+  color: #fff;
+  cursor: pointer;
+}
+
+#iot-image {
+  background-image: url('/path/to/your/local/iot-image.jpg');
+  background-color: rgba(255, 255, 255, 0.93);
+  background-blend-mode: lighten;
+  box-shadow: 0 0 20px 20px white inset;
+  background-size: cover;
+  position: absolute;
+  height: 80%;
+  width: 30%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer {
+  height: 5%;
+  background-color: #878787;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-items {
+    gap: 20px;
+  }
+
+  .main-header h1 {
+    font-size: 24px;
+  }
+
+  #iot-image {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header h1 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 200px;
+  }
+
+  #iot-image {
+    display: none; /* Hide image on very small screens */
+  }
+}

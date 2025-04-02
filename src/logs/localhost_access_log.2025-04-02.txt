@@ -1,0 +1,5 @@
+127.0.0.1 - - [02/Apr/2025:12:52:22 +1100] "GET /TestProject HTTP/1.1" 302 -
+127.0.0.1 - - [02/Apr/2025:12:52:22 +1100] "GET /TestProject/ HTTP/1.1" 200 428
+127.0.0.1 - - [02/Apr/2025:12:52:22 +1100] "GET /TestProject/style.css HTTP/1.1" 404 777
+127.0.0.1 - - [02/Apr/2025:12:52:22 +1100] "GET /favicon.ico HTTP/1.1" 404 683
+127.0.0.1 - - [02/Apr/2025:12:52:25 +1100] "GET /TestProject/login.jsp HTTP/1.1" 404 740
